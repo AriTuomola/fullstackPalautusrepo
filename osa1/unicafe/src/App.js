@@ -83,13 +83,13 @@ const App = () => {
   const average = (good - bad) / (good + bad + neutral)
   const positive= ((good / allClicks) *100)
 
-  return [
+  return (
     <div>
       <Header/>
       <Buttons allClicks={allClicks} setAll={setAll} good={good} setGood={setGood} neutral={neutral} setNeutral={setNeutral} bad={bad} setBad={setBad}/>
       <Statistics good={good} neutral={neutral} bad={bad} allClicks={allClicks} average={average} positive={positive}/>
     </div>
-  ]
+  )
 }
 
 export default App;
